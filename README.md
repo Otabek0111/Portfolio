@@ -2,7 +2,7 @@
 
 ## Deployment Link
 
-[Otabek Islomjonov](https://otabek0111.github.io/ProfessionalPortfolio/)
+[Otabek Islomjonov](https://otabek0111.github.io/Portfolio/)
 
 ## Features
 
