@@ -11,24 +11,6 @@
 - Integration with external links and social media profiles
 - Easy customization and addition of projects
 
-## Screen Shots of the application
-
-Screen shot 1: Top of the Webpage.
-
-![](assets/images/Screenshot-1.png)
-
-Screen shot 2: About Me section.
-
-![](assets/images/Screenshot-2.png)
-
-Screen shot 3: My Work section.
-
-![](assets/images/Screenshot-3.png)
-
-Screen shot 4: Bottom section, Contact me.
-
-![](assets/images/Screenshot-4.png)
-
 ## Getting Started
 
 To get started with creating your own professional portfolio website, follow these steps:
