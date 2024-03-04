@@ -31,7 +31,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
 .lines {
   position: absolute;
   top: 0;
@@ -40,6 +39,7 @@ body {
   height: 100%;
   margin: auto;
   width: 90vw;
+  pointer-events: none; /* Disable pointer events on the lines container */
 }
 
 .line {
@@ -50,6 +50,7 @@ body {
   left: 50%;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
+  pointer-events: none; /* Disable pointer events on the lines */
 }
 
 .line::after {
@@ -93,10 +94,10 @@ body {
     top: 110%;
   }
 }
+ 
 /* created parallax scrolling effect */
 header {
   background-image: url("../images/background-img.jpg");
-  /* set specific height */
   min-height: 955px;
   background-attachment: fixed;
   background-position: center;
