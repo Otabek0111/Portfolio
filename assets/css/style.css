@@ -10,7 +10,7 @@ body {
   width: 100%;
 
   color: #000;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   position: relative;
   font-family: "Open Sans", sans-serif;
   /* overflow: hidden; */
@@ -20,6 +20,7 @@ body {
   animation: gradient 15s ease infinite;
   height: 100vh;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -31,74 +32,10 @@ body {
     background-position: 0% 50%;
   }
 }
-.lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
-  pointer-events: none; /* Disable pointer events on the lines container */
-}
-
-.line {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  pointer-events: none; /* Disable pointer events on the lines */
-}
-
-.line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
-  width: 100%;
-  top: -50%;
-  left: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    #ffffff 75%,
-    #ffffff 100%
-  );
-  animation: drop 11s 0s infinite;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-
-.line:nth-child(1) {
-  margin-left: -25%;
-  &::after {
-    animation-delay: 1s;
-  }
-}
-
-.line:nth-child(3) {
-  margin-left: 25%;
-  &::after {
-    animation-delay: 1.5s;
-  }
-}
-
-@keyframes drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
- 
 /* created parallax scrolling effect */
 header {
   background-image: url("../images/background-img.jpg");
-  min-height: 955px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,3 +286,100 @@ nav ul li a:hover::after {
     background-attachment: scroll;
   }
 }
+
+
+
+.arrow {
+  position: sticky;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.arrow span {
+  position: absolute;
+  top: 725px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.bounce {
+  animation: bounceAnim 1s infinite alternate;
+}
+
+@keyframes bounceAnim {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 75%,
+    #ffffff 100%
+  );
+  animation: drop 8s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+  margin-left: -25%;
+  &::after {
+    animation-delay: 1s;
+  }
+}
+
+.line:nth-child(3) {
+  margin-left: 25%;
+  &::after {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+ 
