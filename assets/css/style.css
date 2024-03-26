@@ -45,6 +45,7 @@ header {
 /* Some space for the container from all sides */
 .contain {
   padding: 30px 9%;
+  margin-bottom: 150px;
 }
 
 /* Styling for the navigation menu */
@@ -103,34 +104,39 @@ nav ul li a:hover::after {
 }
 /* styling for the about me image */
 .about-img {
-  flex-basis: 30%;
-  margin-right: 40px;
+  z-index: 9;
+  
 }
 /* styling for the about me image */
 .about-img img {
-  width: 100%;
+  flex-basis: 30%;
+  margin-right: 40px;
+  width: 88%;
   border-radius: 3%;
 }
-/* styling for the about me text */
+
+/* Styling for the About Me section */
 .about-txt {
-  flex-basis: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-bottom: 45%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 0;
+    
 }
 
-.about-txts {
-  color: blanchedalmond;
-  font-size: 55px;
-  font-weight: 600;
-  margin-bottom: 10px;
+/* Styling for the headline in the About Me section */
+.about-heading {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
-/* Styling for the text in the About Me section */
-.about-txts {
-  color: blanchedalmond;
-  font-size: 55px;
-  font-weight: 600;
+
+/* Styling for the body text in the About Me section */
+.about-body {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* Styling for the My Work section */
@@ -223,6 +229,7 @@ nav ul li a:hover::after {
   padding: 80px 0;
   pointer-events: auto;
   text-align: center;
+  margin-bottom: 300px;
 }
 
 .row {
@@ -237,15 +244,38 @@ nav ul li a:hover::after {
   color: #000000; /* Heading color */
   font-size: 66px;
   font-weight: bold;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+}
+.cont h2 {
+  color: #000000; /* Heading color */
+  font-size: 30px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .icons {
   display: flex;
   justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin: 0 20px; /* Adjust spacing between icons */
+}
 
+.icon-container i {
+  margin-bottom: 10px; /* Spacing between icon and text */
+}
+.icons h1 {
+  color: #000000; /* Heading color */
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .icons a {
@@ -272,6 +302,12 @@ nav ul li a:hover::after {
 
   .cont {
     padding: 0 20px;
+  }
+  .contact-heading {
+    font-size: 42px; /* Decrease font size for smaller screens */
+  }
+  .contact {
+    padding: 20px;
   }
 }
 
