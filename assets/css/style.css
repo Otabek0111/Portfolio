@@ -1,21 +1,16 @@
-/* Universal styling for the webpage */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box !important;
-  /* color: white; */
 
 }
 
 body {
   display: table;
   width: 100%;
-
-  /* color: #000; */
   line-height: 1.6; 
   position: relative;
   font-family: "Open Sans", sans-serif;
-  /* /* overflow: hidden;  */
   background: linear-gradient(-45deg, #ee896b, #9e73d0, #3183a1, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -33,24 +28,13 @@ body {
     background-position: 0% 50%;
   }
 }
-/* created parallax scrolling effect */
-/* header {
-  background-image: url("../images/background-img.jpg");
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
-/* Some space for the container from all sides */
 .contain {
   padding: 30px 9%;
   margin-bottom: 150px;
   color: white;
 }
 
-/* Styling for the navigation menu */
 nav {
   justify-content: space-between;
   flex-wrap: wrap;
@@ -58,16 +42,12 @@ nav {
   align-items: center;
   padding: 10px;
   pointer-events: auto;
-
-
 }
 
-/* Size for the logo */
 .logoname {
-  width: 220px;
+  width: 15%;
 }
 
-/* Styling for the navigation menu items */
 nav ul li {
   margin: 5px 25px;
   display: inline-block;
@@ -75,13 +55,11 @@ nav ul li {
 }
 
 nav ul li a {
-  /* color: rgb(255, 255, 255); */
   font-size: 28px;
   text-decoration: none;
   position: relative;
 }
 
-/* Adding a line under each link when hovered */
 nav ul li a::after {
   content: "";
   width: 0;
@@ -97,9 +75,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* Styling for the About Me section */
 #about {
-  /* color: rgb(255, 255, 255); */
   padding: 90px 0;
 }
 .row {
@@ -107,12 +83,11 @@ nav ul li a:hover::after {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* styling for the about me image */
+
 .about-img {
   z-index: 9;
-  
 }
-/* styling for the about me image */
+
 .about-img img {
   flex-basis: 30%;
   margin-right: 40px;
@@ -120,44 +95,34 @@ nav ul li a:hover::after {
   border-radius: 3%;
 }
 
-/* Styling for the About Me section */
 .about-txt {
   max-width: 800px;
   margin: 0 auto;
   padding: 50px 0;
-  
 }
 
-/* Styling for the headline in the About Me section */
 .about-heading {
-  /* color: white; */
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
-/* Styling for the body text in the About Me section */
 .about-body {
   font-size: 18px;
   line-height: 1.8;
   padding: 20px;
-  background-color: rgba(64, 64, 64, 0.7); /* Dark grey background color with some transparency */
-  backdrop-filter: blur(10px); /* Blur the background */
+  background-color: rgba(64, 64, 64, 0.7); 
+  backdrop-filter: blur(10px); 
   border-radius: 40px;  
-  /* color: white; */
 }
-  
 
-
-/* Styling for the My Work section */
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0;
   padding: 20px;
 }
-
 .about-txts {
   text-align: center;
 }
@@ -168,18 +133,15 @@ nav ul li a:hover::after {
   flex-wrap: wrap;
   margin-top: 29px;
 }
-
 .work {
   flex-basis: calc(33.33% - 10px);
   margin-bottom: 20px;
   position: relative;
   padding: 20px;
 }
-
 .work-large {
   flex-basis: calc(66.67% - 10px);
 }
-
 .work img {
   display: block;
   width: 100%;
@@ -187,7 +149,6 @@ nav ul li a:hover::after {
   border-radius: 12px;
   margin-bottom: 10px;
 }
-
 .work::before {
   content: "";
   position: absolute;
@@ -201,11 +162,9 @@ nav ul li a:hover::after {
   transition: opacity 0.3s ease;
   z-index: -1;
 }
-
 .work:hover::before {
   opacity: 0.6;
 }
-
 .work .overlay {
   position: absolute;
   top: 5px;
@@ -218,13 +177,10 @@ nav ul li a:hover::after {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 .work:hover .overlay {
   opacity: 1;
 }
-
 .work .overlay-text {
-  /* color: white; */
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -233,14 +189,10 @@ nav ul li a:hover::after {
   border-radius: 4px;
 }
 
-/* Styling for the Contact Me section */
 #contact {
-  /* background-color: #ffffffbb; */
-  /* color: #000000; Text color */
   padding: 80px 0;
   pointer-events: auto;
   text-align: center;
-  /* margin-bottom: 300px; */
 }
 
 .row {
@@ -252,92 +204,54 @@ nav ul li a:hover::after {
 
 .contact-heading {
   text-align: center;
-  /* color: #000000; Heading color */
   font-size: 66px;
   font-weight: bold;
-  /* margin-bottom: 60px; */
   padding-bottom: 50px;
 }
+
 .cont {
   font-size: 30px;
   font-weight: bold;
   padding: 40px;
-  background-color: rgba(14, 14, 14, 0.7); /* Dark grey background color with some transparency */
-  backdrop-filter: blur(10px); /* Blur the background */
+  background-color: rgba(14, 14, 14, 0.7); 
+  backdrop-filter: blur(10px);
   border-radius: 40px;
   color: white;
 }
 
-
 .icons {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items to the start */
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
 .icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px; /* Adjust spacing between icons */
+  margin: 0 20px; 
 }
 
 .icon-container i {
-  margin-bottom: 10px; /* Spacing between icon and text */
+  margin-bottom: 10px; 
 }
+
 .icons h1 {
-  /* color: #ffffff; Heading color */
   font-size: 30px;
-  /* font-weight: bold; */
   margin-bottom: 20px;
 }
 
 .icons a {
   margin: 10px 20px 10px 20px;
-  color: #8037ff; /* Change color as needed */
+  color: #8037ff; 
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .icons a:hover {
-  color: #240077; /* Change hover color as needed */
-}
-
-/* Media Queries for smaller screen sizes */
-@media screen and (max-width: 767px) {
-  .work {
-    flex-basis: calc(50% - 10px);
-    color: rgb(134, 114, 88);
-  }
-
-  .work-large {
-    flex-basis: 100%;
-  }
-
-  .cont {
-    padding: 0 20px;
-    background-color: #007bff;
-  }
-  .contact-heading h1 {
-    font-size: 42px; /* Decrease font size for smaller screens */
-    color: white;
-  }
-  .contact {
-    padding: 20px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .work {
-    flex-basis: 100%;
-  }
-}
-/* created for parallax scrolling effect max width*/
-@media only screen and (max-device-width: 479px) {
-  header {
-    background-attachment: scroll;
-  }
+  color: #240077; 
 }
 
 .arrow {
@@ -347,17 +261,16 @@ nav ul li a:hover::after {
   transform: translateX(-50%);
   z-index: 1;
   pointer-events: auto;
-
 }
 
 .arrow span {
   position: absolute;
-  top: 625px;
+  top: 75vh; 
   left: 50%;
   width: 50px;
   height: 50px;
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
+  border-left: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 217, 0);
   transform: translateX(-50%) rotate(-45deg);
 }
 
@@ -373,84 +286,18 @@ nav ul li a:hover::after {
     transform: translateY(10px);
   }
 }
-/* 
-.lines {
-  /* position: absolute; 
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
-}
-
-.line {
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-}
-
-.line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
-  width: 100%;
-  top: -50%;
-  left: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    #ffffff 75%,
-    #ffffff 100%
-  );
-  animation: drop 8s 0s infinite;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-
-.line:nth-child(1) {
-  margin-left: -25%;
-  &::after {
-    animation-delay: 1s;
-  }
-}
-
-.line:nth-child(3) {
-  margin-left: 25%;
-  &::after {
-    animation-delay: 1s;
-  }
-}
-
-@keyframes drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-} */
- 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
- header { 
-  
+
+header { 
   margin: 0;
   height: 100%;
   overflow: hidden;
   font-family: 'Roboto' !important; 
   color: white;
   font-size: 9px;
-  
 }
 
 #magic {
-
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -461,7 +308,6 @@ nav ul li a:hover::after {
 }
 
 .playground{
-
   /* position: fixed; */
   width: 100%;
   height: 100vh;
@@ -476,13 +322,10 @@ nav ul li a:hover::after {
 
 }
 .bottomPosition{
-
   text-align: center;
   margin-bottom: 50px;
-  
 }
 .minText{
-  
   font-size: 14px;
 }
 
@@ -497,4 +340,133 @@ a {
     height: 50px;
 }
 
+
+
+/* Media Queries for smaller screen sizes */
+@media screen and (max-width: 767px) {
+  .work {
+    flex-basis: calc(50% - 10px);
+    color: rgb(134, 114, 88);
+  }
+
+  .work-large {
+    flex-basis: 100%;
+  }
+
+  .cont {
+    padding: 0 20px;
+  }
+  .contact-heading h1 {
+    font-size: 42px; 
+  }
+  .contact {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .work {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  header {
+    background-attachment: scroll;
+  }
+
+    body {
+      font-size: 14px; /* Adjust body font size for smaller screens */
+    }
+  
+    .contain {
+      padding: 20px 5%; /* Adjust container padding for smaller screens */
+      margin-bottom: 50px; /* Adjust container margin for smaller screens */
+    }
+  
+    nav {
+      padding: 5px; /* Adjust navigation padding for smaller screens */
+    }
+  
+    .logoname {
+      width: 30%; /* Adjust logo width for smaller screens */
+    }
+  
+    nav ul li {
+      margin: 5px 10px; /* Adjust navigation item margin for smaller screens */
+    }
+  
+    nav ul li a {
+      font-size: 20px; /* Adjust navigation item font size for smaller screens */
+    }
+  
+    .about-img img {
+      flex-basis: 100%; /* Adjust about image width for smaller screens */
+      margin-right: 0; /* Remove margin for smaller screens */
+    }
+  
+    .about-txt {
+      max-width: 100%; /* Adjust about text width for smaller screens */
+      margin: 20px 0; /* Adjust about text margin for smaller screens */
+      padding: 20px; /* Adjust about text padding for smaller screens */
+    }
+  
+    .about-heading {
+      font-size: 32px; /* Adjust about heading font size for smaller screens */
+      margin-bottom: 10px; /* Adjust about heading margin for smaller screens */
+    }
+  
+    .about-body {
+      font-size: 16px; /* Adjust about body font size for smaller screens */
+      padding: 10px; /* Adjust about body padding for smaller screens */
+    }
+  
+    .work {
+      flex-basis: 100%; /* Adjust work item width for smaller screens */
+      margin-bottom: 20px; /* Adjust work item margin for smaller screens */
+    }
+  
+    .work img {
+      width: 80%; /* Adjust work image width for smaller screens */
+      border-radius: 8px; /* Adjust work image border radius for smaller screens */
+    }
+  
+    .contact-heading {
+      font-size: 22px; /* Adjust contact heading font size for smaller screens */
+      padding-bottom: 20px; /* Adjust contact heading padding for smaller screens */
+    }
+  
+    .cont {
+      font-size: 10px; /* Adjust contact info font size for smaller screens */
+      padding: 20px; /* Adjust contact info padding for smaller screens */
+    }
+  
+    .icons h1 {
+      font-size: 14px; /* Adjust icon heading font size for smaller screens */
+      margin-bottom: 1px; /* Adjust icon heading margin for smaller screens */
+    }
+  
+    .icons a {
+      margin: 10px; /* Adjust icon link margin for smaller screens */
+      font-size: 70%;
+    }
+
+    header { 
+      font-size: 12px; /* Adjust header font size for smaller screens */
+    }
+  
+    .minText{
+      font-size: 12px; /* Adjust minimum text font size for smaller screens */
+    }
+  
+    .bottomPosition{
+      margin-bottom: 10px; /* Adjust margin bottom for smaller screens */
+    }
+  
+    .logo {
+      width: 20px; /* Adjust logo width for smaller screens */
+      height: 20px; /* Adjust logo height for smaller screens */
+    }
+  }
+    
 
