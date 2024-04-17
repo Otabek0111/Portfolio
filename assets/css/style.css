@@ -344,6 +344,12 @@ a {
 
 /* Media Queries for smaller screen sizes */
 @media screen and (max-width: 767px) {
+  
+  .about-img {
+    flex-basis: 50%; /* Adjust about image width for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+
   .work {
     flex-basis: calc(50% - 10px);
     color: rgb(134, 114, 88);
@@ -356,29 +362,43 @@ a {
   .cont {
     padding: 0 20px;
   }
-  .contact-heading h1 {
-    font-size: 42px; 
+  .cont h2 {
+    font-size: 20px;
+  }
+  .contact-heading {
+    font-size: 32px; 
+    padding: 25px;
   }
   .contact {
     padding: 20px;
   }
-}
 
-@media screen and (max-width: 479px) {
-  .work {
-    flex-basis: 100%;
+  .icons h1 {
+    font-size: 14px; /* Adjust icon heading font size for smaller screens */
+    margin-bottom: 1px; /* Adjust icon heading margin for smaller screens */
+  }
+
+  .icons a {
+    margin: 10px; /* Adjust icon link margin for smaller screens */
+    font-size: 35%;
   }
 }
+
 
 @media only screen and (max-width: 479px) {
-  header {
-    background-attachment: scroll;
-  }
+
+    header {
+      background-attachment: scroll;
+    }
 
     body {
       font-size: 14px; /* Adjust body font size for smaller screens */
     }
   
+    .work {
+      flex-basis: 100%;
+    }
+
     .contain {
       padding: 20px 5%; /* Adjust container padding for smaller screens */
       margin-bottom: 50px; /* Adjust container margin for smaller screens */
