@@ -39,6 +39,8 @@ To get started with creating your own professional portfolio website, follow the
 
 - HTML5
 - CSS3
+- JavaScript 
+
 
 ## License
 
