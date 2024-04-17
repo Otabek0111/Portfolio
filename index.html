@@ -6,7 +6,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Portfolio</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    
     <link rel="stylesheet" href="assets/css/style.css" />
+
     <!-- Font Awesome -->
 
     <link
@@ -22,35 +28,80 @@
     />
   </head>
   <body>
-    <div class="lines">
+    <!-- <div class="lines">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
-    </div> 
+    </div>  -->
+
+
     <!-- section for the heading of the application top of the page -->
-    <header title="image of a white laptop icon with a black background">
-      <div class="contain">
-        <nav>
-          <img
-            src="assets/images/logo-no-background.png"
-            alt="Logo of the name Otabek in bronze with a box around"
-            class="logo"
-          />
-          <div class="arrow bounce">
-            <span></span>
-          </div>
-          <ul>
-            <li><a href="#about"> About Me </a></li>
-            <li><a href="#work"> My Work </a></li>
-            <li><a href="#contact"> Contact Me </a></li>
-          </ul>
-        </nav>
+
+
+    <div class="contain">
+      <nav>
+        <img
+          src="assets/images/logo-no-background.png"
+          alt="Logo of the name Otabek in bronze with a box around"
+          class="logoname"
+        />
+        <div class="arrow bounce">
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="#about"> About Me </a></li>
+          <li><a href="#work"> My Work </a></li>
+          <li><a href="#contact"> Contact Me </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <header>
 
 
 
 
 
-      </div>
+
+      <script type="x-shader/x-vertex" id="vertexshader">
+
+        attribute float size;
+        attribute vec3 customColor;
+        varying vec3 vColor;
+      
+        void main() {
+      
+          vColor = customColor;
+          vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+          gl_PointSize = size * ( 300.0 / -mvPosition.z );
+          gl_Position = projectionMatrix * mvPosition;
+      
+        }
+      
+      </script>
+      <script type="x-shader/x-fragment" id="fragmentshader">
+      
+       uniform vec3 color;
+       uniform sampler2D pointTexture;
+      
+       varying vec3 vColor;
+      
+       void main() {
+      
+         gl_FragColor = vec4( color * vColor, 1.0 );
+         gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+      
+       }
+      </script>
+      
+      <div id="magic"></div>
+      <div class="playground"> </div>
+
+
+
+
+
+
     </header>
     <!-- created the about me section -->
     <section id="about">
@@ -163,18 +214,19 @@
           <h2>Links Below ↓</h2>
           <!-- Social Media Icons -->
           <div class="icons">
-            <div class="icon-container">
-              <a href="https://github.com/Otabek0111" target="_blank">
-                <i class="fab fa-github fa-5x"></i>
-              </a>
-              <h1>Github</h1>
-            </div>
           
             <div class="icon-container">
               <a href="https://www.linkedin.com/in/otabek-islomjonov/" target="_blank">
                 <i class="fab fa-linkedin fa-5x"></i>
               </a>
               <h1>Linkedin</h1>
+            </div>
+
+            <div class="icon-container">
+              <a href="https://github.com/Otabek0111" target="_blank">
+                <i class="fab fa-github fa-5x"></i>
+              </a>
+              <h1>Github</h1>
             </div>
           
             <div class="icon-container">
