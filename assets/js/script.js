@@ -97,7 +97,7 @@ const preload = () => {
   
           this.data = {
   
-              text: 'FUTURE\nIS NOW',
+              text: 'THE FUTURE\n   IS NOW',
               amount: 1500,
               particleSize: 1,
               particleColor: 0xffffff,
