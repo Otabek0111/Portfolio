@@ -134,10 +134,12 @@ nav ul li a:hover::after {
   margin-top: 29px;
 }
 .work {
-  flex-basis: calc(33.33% - 10px);
+  flex-basis: calc(33.33% - 70px);
   margin-bottom: 20px;
   position: relative;
   padding: 20px;
+  
+  
 }
 .work-large {
   flex-basis: calc(66.67% - 10px);
@@ -146,24 +148,25 @@ nav ul li a:hover::after {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 20px;
   margin-bottom: 10px;
 }
 .work::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background-color: rgb(196, 164, 255);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  background-color: rgb(235, 255, 164);
   opacity: 0;
   filter: blur(25px);
   transition: opacity 0.3s ease;
   z-index: -1;
 }
 .work:hover::before {
-  opacity: 0.6;
+  opacity: 0.44;
 }
 .work .overlay {
   position: absolute;
@@ -219,6 +222,14 @@ nav ul li a:hover::after {
   color: white;
 }
 
+.cont h2 {
+  font-size: 30px;
+}
+
+.linksBelow{
+  padding: 25px 0px 20px 0px;
+}
+
 .icons {
   display: flex;
   justify-content: center;
@@ -251,7 +262,7 @@ nav ul li a:hover::after {
 }
 
 .icons a:hover {
-  color: #240077; 
+  color: #fbff00; 
 }
 
 .arrow {
@@ -395,8 +406,13 @@ a {
       font-size: 14px; /* Adjust body font size for smaller screens */
     }
   
-    .work {
-      flex-basis: 100%;
+    .work img {
+      /* center item */
+      margin-left: auto;
+      margin-right: auto;
+
+
+
     }
 
     .contain {
