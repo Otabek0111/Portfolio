@@ -496,13 +496,24 @@ a {
 
     }
   
+    .linksBelow {
+      font-size: 16px; 
+      padding: 10px 0px 5px 0px;
+    }
+    .icons {
+      margin: 15px; 
+    }
+
+    .icon-container {
+      margin: 0 10px; 
+    }
     .icons h1 {
       font-size: 14px; 
       margin-bottom: 1px; 
     }
   
     .icons a {
-      margin: 10px; 
+      margin: 1px; 
       font-size: 70%;
     }
 
