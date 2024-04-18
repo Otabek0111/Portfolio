@@ -86,16 +86,17 @@ nav ul li a:hover::after {
 
 .about-img {
   z-index: 9;
+  flex-basis: 20%;
 }
 
 .about-img img {
-  flex-basis: 30%;
   margin-right: 40px;
   width: 88%;
   border-radius: 3%;
 }
 
 .about-txt {
+  flex-basis: 80%;
   max-width: 800px;
   margin: 0 auto;
   padding: 50px 0;
@@ -220,6 +221,8 @@ nav ul li a:hover::after {
   backdrop-filter: blur(10px);
   border-radius: 40px;
   color: white;
+  box-shadow: #ffffff 0px 0px 10px;
+  padding-bottom: 25px;
 }
 
 .cont h2 {
@@ -256,13 +259,29 @@ nav ul li a:hover::after {
 
 .icons a {
   margin: 10px 20px 10px 20px;
-  color: #8037ff; 
+  /* color: #8037ff;  */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
+.linkedin a {
+  color: #0e76a8;
+}
+
+.github a {
+  color: #666464;
+}
+
+.certificate a {
+  color: #5352c4;
+}
+
+.resume a {
+  color: #fbff00;
+}
+
 .icons a:hover {
-  color: #fbff00; 
+  color: #ffffff; 
 }
 
 .arrow {
@@ -330,12 +349,13 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
 }
+
 .bottomPosition{
   text-align: center;
   margin-bottom: 50px;
 }
+
 .minText{
   font-size: 14px;
 }
@@ -371,7 +391,7 @@ a {
   }
 
   .cont {
-    padding: 0 20px;
+    padding: 20px;
   }
   .cont h2 {
     font-size: 20px;
@@ -410,9 +430,6 @@ a {
       /* center item */
       margin-left: auto;
       margin-right: auto;
-
-
-
     }
 
     .contain {
@@ -441,9 +458,12 @@ a {
       margin-right: 0; /* Remove margin for smaller screens */
     }
   
+    #about {
+      padding: 5px; /* Adjust about section padding for smaller screens */
+    }
     .about-txt {
       max-width: 100%; /* Adjust about text width for smaller screens */
-      margin: 20px 0; /* Adjust about text margin for smaller screens */
+      margin: 5px 0; /* Adjust about text margin for smaller screens */
       padding: 20px; /* Adjust about text padding for smaller screens */
     }
   
@@ -473,13 +493,14 @@ a {
     }
   
     .cont {
-      font-size: 10px; /* Adjust contact info font size for smaller screens */
-      padding: 20px; /* Adjust contact info padding for smaller screens */
+      font-size: 10px; 
+      padding: 20px;
+
     }
   
     .icons h1 {
-      font-size: 14px; /* Adjust icon heading font size for smaller screens */
-      margin-bottom: 1px; /* Adjust icon heading margin for smaller screens */
+      font-size: 14px; 
+      margin-bottom: 1px; 
     }
   
     .icons a {
@@ -503,6 +524,9 @@ a {
       width: 20px; /* Adjust logo width for smaller screens */
       height: 20px; /* Adjust logo height for smaller screens */
     }
-  }
-    
 
+    .playground{
+      height: 50%;
+    }
+
+  }
