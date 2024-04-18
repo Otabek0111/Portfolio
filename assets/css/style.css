@@ -210,7 +210,7 @@ nav ul li a:hover::after {
   text-align: center;
   font-size: 66px;
   font-weight: bold;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .cont {
@@ -277,7 +277,7 @@ nav ul li a:hover::after {
 }
 
 .resume a {
-  color: #fbff00;
+  color: #ffffff;
 }
 
 .icons a:hover {
@@ -371,14 +371,12 @@ a {
     height: 50px;
 }
 
-
-
 /* Media Queries for smaller screen sizes */
 @media screen and (max-width: 767px) {
   
   .about-img {
-    flex-basis: 50%; /* Adjust about image width for smaller screens */
-    margin-right: 0; /* Remove margin for smaller screens */
+    flex-basis: 50%; 
+    margin-right: 0; 
   }
 
   .work {
@@ -405,12 +403,12 @@ a {
   }
 
   .icons h1 {
-    font-size: 14px; /* Adjust icon heading font size for smaller screens */
-    margin-bottom: 1px; /* Adjust icon heading margin for smaller screens */
+    font-size: 14px;
+    margin-bottom: 1px; 
   }
 
   .icons a {
-    margin: 10px; /* Adjust icon link margin for smaller screens */
+    margin: 10px; 
     font-size: 35%;
   }
 }
@@ -423,7 +421,7 @@ a {
     }
 
     body {
-      font-size: 14px; /* Adjust body font size for smaller screens */
+      font-size: 14px;
     }
   
     .work img {
@@ -433,63 +431,63 @@ a {
     }
 
     .contain {
-      padding: 20px 5%; /* Adjust container padding for smaller screens */
-      margin-bottom: 50px; /* Adjust container margin for smaller screens */
+      padding: 20px 5%; 
+      margin-bottom: 50px;
     }
   
     nav {
-      padding: 5px; /* Adjust navigation padding for smaller screens */
+      padding: 5px;
     }
   
     .logoname {
-      width: 30%; /* Adjust logo width for smaller screens */
+      width: 30%; 
     }
   
     nav ul li {
-      margin: 5px 10px; /* Adjust navigation item margin for smaller screens */
+      margin: 5px 10px;
     }
   
     nav ul li a {
-      font-size: 20px; /* Adjust navigation item font size for smaller screens */
+      font-size: 20px;
     }
   
     .about-img img {
-      flex-basis: 100%; /* Adjust about image width for smaller screens */
-      margin-right: 0; /* Remove margin for smaller screens */
+      flex-basis: 100%; 
+      margin-right: 0; 
     }
   
     #about {
-      padding: 5px; /* Adjust about section padding for smaller screens */
+      padding: 5px; 
     }
     .about-txt {
-      max-width: 100%; /* Adjust about text width for smaller screens */
-      margin: 5px 0; /* Adjust about text margin for smaller screens */
-      padding: 20px; /* Adjust about text padding for smaller screens */
+      max-width: 100%; 
+      margin: 5px 0; 
+      padding: 20px;
     }
   
     .about-heading {
-      font-size: 32px; /* Adjust about heading font size for smaller screens */
-      margin-bottom: 10px; /* Adjust about heading margin for smaller screens */
+      font-size: 32px; 
+      margin-bottom: 10px; 
     }
   
     .about-body {
-      font-size: 16px; /* Adjust about body font size for smaller screens */
-      padding: 10px; /* Adjust about body padding for smaller screens */
+      font-size: 16px; 
+      padding: 10px; 
     }
   
     .work {
-      flex-basis: 100%; /* Adjust work item width for smaller screens */
-      margin-bottom: 20px; /* Adjust work item margin for smaller screens */
+      flex-basis: 100%; 
+      margin-bottom: 20px; 
     }
   
     .work img {
-      width: 80%; /* Adjust work image width for smaller screens */
-      border-radius: 8px; /* Adjust work image border radius for smaller screens */
+      width: 80%; 
+      border-radius: 8px; 
     }
   
     .contact-heading {
-      font-size: 22px; /* Adjust contact heading font size for smaller screens */
-      padding-bottom: 20px; /* Adjust contact heading padding for smaller screens */
+      font-size: 22px;
+      padding-bottom: 20px;
     }
   
     .cont {
@@ -504,25 +502,25 @@ a {
     }
   
     .icons a {
-      margin: 10px; /* Adjust icon link margin for smaller screens */
+      margin: 10px; 
       font-size: 70%;
     }
 
     header { 
-      font-size: 12px; /* Adjust header font size for smaller screens */
+      font-size: 12px; 
     }
   
     .minText{
-      font-size: 12px; /* Adjust minimum text font size for smaller screens */
+      font-size: 12px; 
     }
   
     .bottomPosition{
-      margin-bottom: 10px; /* Adjust margin bottom for smaller screens */
+      margin-bottom: 10px;
     }
   
     .logo {
-      width: 20px; /* Adjust logo width for smaller screens */
-      height: 20px; /* Adjust logo height for smaller screens */
+      width: 20px;
+      height: 20px; 
     }
 
     .playground{
