@@ -2,19 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box !important;
-
 }
 
 body {
   display: table;
   width: 100%;
-  line-height: 1.6; 
+  line-height: 1.6;
   position: relative;
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(-45deg, #ee896b, #9e73d0, #3183a1, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh; 
+  height: 100vh;
 }
 
 @keyframes gradient {
@@ -113,9 +112,9 @@ nav ul li a:hover::after {
   font-size: 18px;
   line-height: 1.8;
   padding: 20px;
-  background-color: rgba(64, 64, 64, 0.7); 
-  backdrop-filter: blur(10px); 
-  border-radius: 40px;  
+  background-color: rgba(64, 64, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
 }
 
 .container {
@@ -139,8 +138,6 @@ nav ul li a:hover::after {
   margin-bottom: 20px;
   position: relative;
   padding: 20px;
-  
-  
 }
 .work-large {
   flex-basis: calc(66.67% - 10px);
@@ -217,7 +214,7 @@ nav ul li a:hover::after {
   font-size: 30px;
   font-weight: bold;
   padding: 40px;
-  background-color: rgba(14, 14, 14, 0.7); 
+  background-color: rgba(14, 14, 14, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 40px;
   color: white;
@@ -229,7 +226,7 @@ nav ul li a:hover::after {
   font-size: 30px;
 }
 
-.linksBelow{
+.linksBelow {
   padding: 25px 0px 20px 0px;
 }
 
@@ -245,11 +242,11 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px; 
+  margin: 0 20px;
 }
 
 .icon-container i {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .icons h1 {
@@ -259,7 +256,6 @@ nav ul li a:hover::after {
 
 .icons a {
   margin: 10px 20px 10px 20px;
-  /* color: #8037ff;  */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -281,7 +277,7 @@ nav ul li a:hover::after {
 }
 
 .icons a:hover {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .arrow {
@@ -295,7 +291,7 @@ nav ul li a:hover::after {
 
 .arrow span {
   position: absolute;
-  top: 75vh; 
+  top: 75vh;
   left: 50%;
   width: 50px;
   height: 50px;
@@ -316,13 +312,13 @@ nav ul li a:hover::after {
     transform: translateY(10px);
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-header { 
+header {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  font-family: 'Roboto' !important; 
+  font-family: "Roboto" !important;
   color: white;
   font-size: 9px;
 }
@@ -337,7 +333,7 @@ header {
   z-index: -9999;
 }
 
-.playground{
+.playground {
   /* position: fixed; */
   width: 100%;
   height: 100vh;
@@ -351,12 +347,12 @@ header {
   align-items: center;
 }
 
-.bottomPosition{
+.bottomPosition {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.minText{
+.minText {
   font-size: 14px;
 }
 
@@ -367,16 +363,22 @@ a {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Media Queries for smaller screen sizes */
 @media screen and (max-width: 767px) {
-  
   .about-img {
-    flex-basis: 50%; 
-    margin-right: 0; 
+    flex-basis: 50%;
+    margin-right: 0;
+  }
+
+  nav ul li {
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px rgba(255, 255, 255, 0.579);
   }
 
   .work {
@@ -395,7 +397,7 @@ a {
     font-size: 20px;
   }
   .contact-heading {
-    font-size: 32px; 
+    font-size: 32px;
     padding: 25px;
   }
   .contact {
@@ -404,138 +406,133 @@ a {
 
   .icons h1 {
     font-size: 14px;
-    margin-bottom: 1px; 
+    margin-bottom: 1px;
   }
 
   .icons a {
-    margin: 10px; 
+    margin: 10px;
     font-size: 35%;
   }
 }
 
-
 @media only screen and (max-width: 479px) {
-
-    header {
-      background-attachment: scroll;
-    }
-
-    body {
-      font-size: 14px;
-    }
-  
-    .work img {
-      /* center item */
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .contain {
-      padding: 20px 5%; 
-      margin-bottom: 50px;
-    }
-  
-    nav {
-      padding: 5px;
-    }
-  
-    .logoname {
-      width: 30%; 
-    }
-  
-    nav ul li {
-      margin: 5px 10px;
-    }
-  
-    nav ul li a {
-      font-size: 20px;
-    }
-  
-    .about-img img {
-      flex-basis: 100%; 
-      margin-right: 0; 
-    }
-  
-    #about {
-      padding: 5px; 
-    }
-    .about-txt {
-      max-width: 100%; 
-      margin: 5px 0; 
-      padding: 20px;
-    }
-  
-    .about-heading {
-      font-size: 32px; 
-      margin-bottom: 10px; 
-    }
-  
-    .about-body {
-      font-size: 16px; 
-      padding: 10px; 
-    }
-  
-    .work {
-      flex-basis: 100%; 
-      margin-bottom: 20px; 
-    }
-  
-    .work img {
-      width: 80%; 
-      border-radius: 8px; 
-    }
-  
-    .contact-heading {
-      font-size: 22px;
-      padding-bottom: 20px;
-    }
-  
-    .cont {
-      font-size: 10px; 
-      padding: 20px;
-
-    }
-  
-    .linksBelow {
-      font-size: 16px; 
-      padding: 10px 0px 5px 0px;
-    }
-    .icons {
-      margin: 15px; 
-    }
-
-    .icon-container {
-      margin: 0 10px; 
-    }
-    .icons h1 {
-      font-size: 14px; 
-      margin-bottom: 1px; 
-    }
-  
-    .icons a {
-      margin: 1px; 
-      font-size: 70%;
-    }
-
-    header { 
-      font-size: 12px; 
-    }
-  
-    .minText{
-      font-size: 12px; 
-    }
-  
-    .bottomPosition{
-      margin-bottom: 10px;
-    }
-  
-    .logo {
-      width: 20px;
-      height: 20px; 
-    }
-
-    .playground{
-      height: 50%;
-    }
-
+  header {
+    background-attachment: scroll;
   }
+
+  body {
+    font-size: 14px;
+  }
+
+  .work img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contain {
+    padding: 20px 5%;
+    margin-bottom: 50px;
+  }
+  nav {
+    padding: 5px;
+  }
+  .logoname {
+    width: 30%;
+  }
+
+  nav ul li {
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px rgba(255, 255, 255, 0.579);
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .about-img img {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  #about {
+    padding: 5px;
+  }
+  .about-txt {
+    max-width: 100%;
+    margin: 5px 0;
+    padding: 20px;
+  }
+
+  .about-heading {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .about-body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .work {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .work img {
+    width: 80%;
+    border-radius: 8px;
+  }
+
+  .contact-heading {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .cont {
+    font-size: 10px;
+    padding: 20px;
+  }
+
+  .linksBelow {
+    font-size: 16px;
+    padding: 10px 0px 5px 0px;
+  }
+  .icons {
+    margin: 15px;
+  }
+
+  .icon-container {
+    margin: 0 10px;
+  }
+  .icons h1 {
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+
+  .icons a {
+    margin: 1px;
+    font-size: 70%;
+  }
+
+  header {
+    font-size: 12px;
+  }
+
+  .minText {
+    font-size: 12px;
+  }
+
+  .bottomPosition {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .playground {
+    height: 50%;
+  }
+}
