@@ -145,9 +145,13 @@ nav ul li a:hover::after {
 .work img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+
   border-radius: 20px;
   margin-bottom: 10px;
+}
+#cleverMoving {
+  height: 20vh;
 }
 .work::before {
   content: "";
@@ -473,6 +477,7 @@ a {
     font-size: 16px;
     padding: 10px;
   }
+
 
   .work {
     flex-basis: 100%;
